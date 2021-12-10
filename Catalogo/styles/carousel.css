@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+.owl-item > div {
+  cursor: pointer;
+  margin: 6% 8%;
+  transition: margin 0.4s ease;
+}
+.owl-item.center > div {
+  cursor: auto;
+  margin: 0;
+}
+.owl-item:not(.center) > div:hover {
+  opacity: .75;
+}
+@media (min-width: 768px){
+.container, .container-md, .container-sm {
+    max-width: 100%!important;
+}
+}

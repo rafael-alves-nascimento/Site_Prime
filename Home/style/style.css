@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* --------------- Inicio Header --------------- */
+    .logo img{
+        width: 100px;
+        margin-left: 20px;
+    }
+
+    .nav_bar{
+        box-sizing: border-box;
+        background-color: rgb(35, 47, 62);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width:100%;
+    }
+
+    .nav_bar a{
+        text-decoration: none;
+    }
+
+    #btn-mobile {
+        display: none;
+    }
+
+    .sing-in, .language, .search{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .nav_bar_right{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layout a.search{
+        display: none;
+    }
+    .layout a{
+        color: rgb(196, 196, 196);
+        margin: 5px;
+        font-size: 20px;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .layout a:hover{
+        color: rgb(124, 124, 124);
+    }
+
+
+    svg{
+        margin-left: 5px;
+    }
+
+    p, h1, h4 {
+        color: white;
+    }
+/* --------------- Fim Header --------------- */
+
+/* --------------- Inicio Banners --------------- */
+    .welcome-banner {
+        background: url(../img/banner-image.jpg) no-repeat top transparent;
+        background-size: cover;
+        min-height:300px;
+    }
+
+
+    .left-sidebar h4 {
+        font-size:20px;
+        padding-top:20px;
+        line-height:24px;
+    }
+
+    .line-divider {
+        position:relative;
+    }
+
+    .line-divider:after {
+        position:absolute;
+        display:block;
+        height:1px;
+        width:100%;
+        content:"";
+        background-color: white;
+        top: 10px;
+    }
+
+    .line-divider span {
+        background-color:rgb(0, 0, 0);
+        padding-left:20px;
+        padding-right:20px;
+        display:inline-block;
+        position:relative;
+        z-index:1;
+    }
+
+    .banner-image-left {
+        background: url(../img/banner-image-left.jpg) no-repeat top left transparent;
+        background-size: cover;
+        min-height:675px;
+    }
+
+    .row-right{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .right-sidebar, .left-sidebar {
+        padding-top:100px;
+        padding-bottom: 50px;
+    }
+
+    .right-sidebar h4 {
+        font-size:20px;
+        padding-top:20px;
+        line-height:24px;
+    }
+
+    .cta-block-button .btn {
+        height:55px;
+        border-radius:0px;
+        font-size:17px;
+        padding: 0px 100px;
+        margin-top:30px;
+    }
+
+    .banner-image-right {
+        background: url(../img/banner-image-right.jpg) no-repeat top right transparent;
+        background-size: cover;
+        min-height:675px;
+    }
+
+    .left-sidebar p {
+        margin-top:25px;
+        font-size: 15px;
+    }
+
+    .banner-remote {
+        background: url(../img/banner-remote.jpg) no-repeat top left transparent;
+        background-size: cover;
+        min-height:675px;
+    }
+
+    .banner-remote-right {
+        background: url(../img/banner-remote-right.jpg) no-repeat center right transparent;
+        background-size: cover;
+        min-height:675px;
+    }
+
+    .banner-middle {
+        background-color: white;
+        color:black;
+        padding-top:60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper p, .wrapper h1{
+        color: black;
+    }
+
+    .banner-middle p{
+        font-size: 20px;
+    }
+
+    .banner-middle p {
+        font-size:20px;
+        font-weight:inherit;
+    }
+/* --------------- Fim Banners --------------- */
+
+/* --------------- Inicio Footer --------------- */
+    .footer{
+        background-color: rgb(35, 47, 62);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom:10px;
+    }
+
+    .footer p{
+        color: rgb(255, 255, 255);
+    }
+
+    .footer a{
+        text-decoration: none;
+    }
+/* --------------- Fim Footer --------------- */
+
+/* --------------- Inicio Responsividade --------------- */
+@media (max-width: 990px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: rgb(35, 47, 62);
+        z-index: 1000;
+        visibility: hidden;
+    }
+    #nav.active .layout {
+        height: 50%;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    .layout a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    .layout a.search{
+        display: none;
+    }
+      /* Buttom mobile ativado */
+      #btn-mobile {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 1rem;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        gap: 0.5rem;
+        z-index: 10000;
+        color: white;
+        background-color: rgb(35, 47, 62);
+      }
+      #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+      }
+      #hamburger::after,
+      #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 6px;
+        transition: 0.3s;
+        position: relative;
+      }
+      #nav.active #hamburger {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburger::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -8px;
+      }
+      
+      .banner-middle{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+      .col-sm-4{
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important;
+        flex-direction: column!important;
+        width: 100%!important;
+    }
+}
+
+@media (max-width: 800px){
+    .search {
+        display: none;
+    }
+
+    .layout a.search{
+        display: block;
+    }
+
+    .welcome-banner {
+        background-image: linear-gradient(to top, #000 60%, transparent 90%), url(../img/welcome-banner-responsive.jpg);
+        background-size: 130%;
+        background-position: top;
+        min-height:900px;
+        display: flex; 
+        align-items: flex-end;
+    }
+
+    .banner-image-left {
+        background-image: linear-gradient(to top, #000 50%, transparent 90%), url(../img/banner-image-left-responsive.jpg);
+        background-size: 120%;
+        background-position: top;
+        min-height:700px;
+        display: flex; 
+        align-items: flex-end;
+    }
+
+    .banner-image-right {
+        background-image: linear-gradient(to top, #000 60%, transparent 90%), url(../img/banner-image-right-reponsive_.jpg);
+        background-size: 100%;
+        background-position: top;
+        min-height:700px;
+        display: flex; 
+        align-items: flex-end;
+    }
+    
+    
+    .banner-remote {
+        background-image: linear-gradient(to top, #000 60%, transparent 90%), url(../img/banner-remote-responsive.jpg);
+        background-size: 130%;
+        background-position: top;
+        min-height:700px;
+        display: flex; 
+        align-items: flex-end;
+    }
+    
+    .banner-remote-right {
+        background-image: linear-gradient(to top, #000 60%, transparent 90%), url(../img/banner-remote-right-responsive.jpg);
+        background-size: 100%;
+        background-position: top;
+        min-height:700px;
+        display: flex; 
+        align-items: flex-end;
+    }
+    .wrapper .container{
+        background-color: transparent!important;
+    }
+    .content{
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }   
+
+    .col-sm-8 {
+        width: 100%!important;
+    }
+    .col-sm-5 {
+        width: 100%!important;
+    }
+    .col-sm-6 {
+        width: 100%!important;
+    }
+}
+@media (max-width: 400px){
+    .language {
+        display: none;
+    }
+}
+
+/* --------------- Fim Responsividade --------------- */

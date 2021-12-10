@@ -1,0 +1,61 @@
+#carousel{
+  color: #0f171e ;
+  height: 500px;
+}
+
+body {
+  margin: 0;
+  background-color: #0f171e ;
+}
+
+#carousel {
+  perspective: 1000px;
+  overflow: hidden;
+}
+#carousel #scene {
+  width: 42%;
+  margin: 40px auto 0 auto;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+#carousel #scene .carousel_item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px 0 10px;
+  backface-visibility: hidden;
+}
+#carousel #scene .carousel_item:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#carousel #carousel_btn {
+  width: 100px;
+  margin: 20px auto 0 auto;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#carousel #carousel_btn .btn {
+  width: 45px;
+  height: 45px;
+  line-height: 30px;
+  padding-left: 7px;
+  padding-bottom:10px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  float: left;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#carousel #carousel_btn .btn:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+#carousel #carousel_btn > div:first-child {
+  margin-right: 10px;
+}

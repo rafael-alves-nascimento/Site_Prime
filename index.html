@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Prime Video</title>
+</head>
+
+<body>
+    <header>
+        <!-- Inicio Header -->
+        <div class="nav_bar">
+            <!-- Inicio Barra de navegação -->
+            <div class="logo">
+                <a href="#"><img src="Home/img/logo.png" alt="Prime"></a>
+            </div>
+            <!-- Barra de navegação da esquerda -->
+            <nav class="nav_bar_left" id="nav">
+                <!-- Button Mobile -->
+                <button id="btn-mobile"><span id="hamburger"></span></button>
+                <!-- Menu de navegação -->
+                <div class="layout">
+                    <a href="#">Inicio</a>
+                    <a href="Catalogo/index.html">Series</a>
+                    <a href="Catalogo/index.html">Filmes</a>
+                    <a href="Catalogo/index.html">Categorias</a>
+                    <a class="search" href="#">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Procura algum filme?"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"
+                                style="background-color: rgb(35, 47, 62); color: white; border-color: white;">Buscar</button>
+                        </form>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Barra de navegação da esquerda -->
+            <nav class="nav_bar_right">
+                <div class="search">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Procura algum filme?"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"
+                            style="background-color: rgb(35, 47, 62); color: white; border-color: white;">Buscar</button>
+                    </form>
+                </div>
+                <div class="language">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false"> <svg xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" fill="currentColor" class="bi bi-globe2" viewBox="0 0 20 20">
+                                <path
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Portugês Brasil</a></li>
+                            <li><a class="dropdown-item" href="#">Portugês Portugal</a></li>
+                            <li><a class="dropdown-item" href="#">Italiano</a></li>
+                            <li><a class="dropdown-item" href="#">Espanhol</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sing-in">
+                    <!-- Button trigger modal -->
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content"
+                                style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel">Fazer Login</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail
+                                                com
+                                                mais ninguém.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Senha</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Lembrar me</label>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Entrar</button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2"
+                                        data-bs-toggle="modal">Não possui conta?</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content"
+                                style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Criar Conta</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Senha</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="inputAddress" class="form-label">Endereço</label>
+                                            <input type="text" class="form-control" id="inputAddress"
+                                                placeholder="Rua Lorem Ipsum Dolor, 123">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="inputCity" class="form-label">Cidade</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="inputState" class="form-label">Estado</label>
+                                            <select id="inputState" class="form-select">
+                                                <option selected>Escolha...</option>
+                                                <option>São Paulo</option>
+                                                <option>Rio de Janeiro</option>
+                                                <option>Minas Gerais</option>
+                                                <option>Santa Catarina</option>
+                                                <option>Paraná</option>
+                                                <option>Bahia</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    Lembrar me
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Criar Conta</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                        data-bs-toggle="modal">Voltar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button" ><svg
+                            xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- --- Fim Header --- -->
+    <main>
+        <!-- --- Inicio banners---  -->
+        <div class="welcome-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-lg-5 left-sidebar ">
+                        <div class="content">
+                            <h1>Assista a filmes e séries</h1>
+                            <h4>Assine o Amazon Prime e assista a filmes e séries, incluindo Amazon Originals. Aproveite
+                                também frete GRÁTIS e rápido na Amazon.com.br em milhares de produtos elegíveis, milhões
+                                de
+                                músicas sem anúncios e muito mais.</h4>
+                            <div class="row">
+                                <div class="col-sm-7 text-center cta-block">
+                                    <!-- Button trigger modal -->
+                                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content"
+                                                style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalToggleLabel">Fazer Login</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputEmail1"
+                                                                class="form-label">Email</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                            <div id="emailHelp" class="form-text">Nunca compartilharemos
+                                                                seu e-mail
+                                                                com
+                                                                mais ninguém.</div>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label">Senha</label>
+                                                            <input type="password" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="mb-3 form-check">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Lembrar
+                                                                me</label>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Entrar</button>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-primary"
+                                                        data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Não
+                                                        possui conta?</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content"
+                                                style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Criar Conta
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form class="row g-3">
+                                                        <div class="col-md-6">
+                                                            <label for="inputEmail4" class="form-label">Email</label>
+                                                            <input type="email" class="form-control" id="inputEmail4">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="inputPassword4" class="form-label">Senha</label>
+                                                            <input type="password" class="form-control"
+                                                                id="inputPassword4">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <label for="inputAddress"
+                                                                class="form-label">Endereço</label>
+                                                            <input type="text" class="form-control" id="inputAddress"
+                                                                placeholder="Rua Lorem Ipsum Dolor, 123">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="inputCity" class="form-label">Cidade</label>
+                                                            <input type="text" class="form-control" id="inputCity">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="inputState" class="form-label">Estado</label>
+                                                            <select id="inputState" class="form-select">
+                                                                <option selected>Choose...</option>
+                                                                <option>São Paulo</option>
+                                                                <option>Rio de Janeiro</option>
+                                                                <option>Minas Gerais</option>
+                                                                <option>Santa Catarina</option>
+                                                                <option>Paraná</option>
+                                                                <option>Bahia</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <label class="form-check-label" for="gridCheck">
+                                                                    Lembrar me
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit" class="btn btn-primary">Criar
+                                                                Conta</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                                        data-bs-toggle="modal">Voltar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle"
+                                        role="button" style="font-size: 16px; padding: 16px; margin-top: 10px;">Já é membro Prime? Faça login</a>
+
+                                    <p class="line-divider"><span> ou </span></p>
+
+                                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content"
+                                                style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalToggleLabel">Fazer Login</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputEmail1"
+                                                                class="form-label">Email</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                            <div id="emailHelp" class="form-text">Nunca compartilharemos
+                                                                seu e-mail
+                                                                com
+                                                                mais ninguém.</div>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label">Senha</label>
+                                                            <input type="password" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="mb-3 form-check">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Lembrar
+                                                                me</label>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Entrar</button>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-primary"
+                                                        data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Não
+                                                        possui conta?</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content"
+                                                style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Criar Conta
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form class="row g-3">
+                                                        <div class="col-md-6">
+                                                            <label for="inputEmail4" class="form-label">Email</label>
+                                                            <input type="email" class="form-control" id="inputEmail4">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="inputPassword4" class="form-label">Senha</label>
+                                                            <input type="password" class="form-control"
+                                                                id="inputPassword4">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <label for="inputAddress"
+                                                                class="form-label">Endereço</label>
+                                                            <input type="text" class="form-control" id="inputAddress"
+                                                                placeholder="Rua Lorem Ipsum Dolor, 123">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="inputCity" class="form-label">Cidade</label>
+                                                            <input type="text" class="form-control" id="inputCity">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="inputState" class="form-label">Estado</label>
+                                                            <select id="inputState" class="form-select">
+                                                                <option selected>Choose...</option>
+                                                                <option>São Paulo</option>
+                                                                <option>Rio de Janeiro</option>
+                                                                <option>Minas Gerais</option>
+                                                                <option>Santa Catarina</option>
+                                                                <option>Paraná</option>
+                                                                <option>Bahia</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <label class="form-check-label" for="gridCheck">
+                                                                    Lembrar me
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit" class="btn btn-primary">Criar
+                                                                Conta</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                                        data-bs-toggle="modal">Voltar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle"
+                                        role="button" style="font-size: 16px; padding: 16px; margin-top: 10px;">Comece já seu teste grátis de 30 dias</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BANNER ENDS HERE -->
+
+        <!--BANNER-IMAGE-LEFT STRAT HERE-->
+        <div class="banner-image-left">
+            <div class="container">
+                <div class="row-right">
+                    <div class="col-sm-offset-7 col-sm-5 right-sidebar">
+                        <div class="content">
+                            <h1>Ótimo entretenimento</h1>
+                            <h4>Com sua assinatura Prime, você tem acesso a filmes exclusivos de Hollywood, originais da
+                                Amazon.</h4>
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content"
+                                                style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalToggleLabel">Fazer Login</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputEmail1"
+                                                                class="form-label">Email</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                            <div id="emailHelp" class="form-text">Nunca compartilharemos
+                                                                seu e-mail
+                                                                com
+                                                                mais ninguém.</div>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label">Senha</label>
+                                                            <input type="password" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="mb-3 form-check">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Lembrar
+                                                                me</label>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Entrar</button>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-primary"
+                                                        data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Não
+                                                        possui conta?</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content"
+                                                style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Criar Conta
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form class="row g-3">
+                                                        <div class="col-md-6">
+                                                            <label for="inputEmail4" class="form-label">Email</label>
+                                                            <input type="email" class="form-control" id="inputEmail4">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="inputPassword4" class="form-label">Senha</label>
+                                                            <input type="password" class="form-control"
+                                                                id="inputPassword4">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <label for="inputAddress"
+                                                                class="form-label">Endereço</label>
+                                                            <input type="text" class="form-control" id="inputAddress"
+                                                                placeholder="Rua Lorem Ipsum Dolor, 123">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="inputCity" class="form-label">Cidade</label>
+                                                            <input type="text" class="form-control" id="inputCity">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="inputState" class="form-label">Estado</label>
+                                                            <select id="inputState" class="form-select">
+                                                                <option selected>Choose...</option>
+                                                                <option>São Paulo</option>
+                                                                <option>Rio de Janeiro</option>
+                                                                <option>Minas Gerais</option>
+                                                                <option>Santa Catarina</option>
+                                                                <option>Paraná</option>
+                                                                <option>Bahia</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <label class="form-check-label" for="gridCheck">
+                                                                    Lembrar me
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit" class="btn btn-primary">Criar
+                                                                Conta</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                                        data-bs-toggle="modal">Voltar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle"
+                                        role="button" style="font-size: 16px; padding: 16px; margin-top: 10px;">Já é membro Prime? Faça login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!--BANNER-IMAGE-LEFT ENDS HERE-->
+
+
+
+        <!--BANNER-IMAGE-RIGHT START HERE-->
+        <div class="banner-image-right">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-sm-6 left-sidebar ">
+                        <div class="content">
+                            <h1>Comece uma assinatura, muitos benefícios</h1>
+                            <h4>Sua assinatura Prime agora também inclui música sem anúncios junto com entrega rápida e
+                                gratuita ilimitada de itens qualificados, acesso exclusivo a ofertas e muito mais.</h4>
+                                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content"
+                                        style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1"
+                                                        class="form-label">Email</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text">Nunca compartilharemos
+                                                        seu e-mail
+                                                        com
+                                                        mais ninguém.</div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label">Senha</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                        id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Lembrar
+                                                        me</label>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Entrar</button>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary"
+                                                data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Não
+                                                possui conta?</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content"
+                                        style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel2">Criar Conta
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="row g-3">
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Senha</label>
+                                                    <input type="password" class="form-control"
+                                                        id="inputPassword4">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputAddress"
+                                                        class="form-label">Endereço</label>
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="Rua Lorem Ipsum Dolor, 123">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputCity" class="form-label">Cidade</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="inputState" class="form-label">Estado</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+                                                        <option>São Paulo</option>
+                                                        <option>Rio de Janeiro</option>
+                                                        <option>Minas Gerais</option>
+                                                        <option>Santa Catarina</option>
+                                                        <option>Paraná</option>
+                                                        <option>Bahia</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="gridCheck">
+                                                        <label class="form-check-label" for="gridCheck">
+                                                            Lembrar me
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Criar
+                                                        Conta</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                                data-bs-toggle="modal">Voltar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle"
+                                role="button" style="font-size: 16px; padding: 16px; margin-top: 10px;">Já é membro Prime? Faça login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--BANNER-IMAGE-RIGHT START HERE-->
+
+
+        <!--BANNER-REMOTE START HERE-->
+        <div class="banner-remote">
+            <div class="container">
+                <div class="row-right">
+                    <div class="col-sm-offset-7 col-sm-5 right-sidebar">
+                        <div class="content">
+                            <h1>Ainda melhor com Fire TV Stick</h1>
+                            <h4>Os maiores filmes e programas de TV são sempre melhores na tela grande. Basta conectar o
+                                seu
+                                Amazon Fire TV Stick e transmitir em qualquer HDTV. Pressione o botão de voz no controle
+                                remoto e diga o nome do título que você deseja assistir para encontrá-lo em segundos.
+                            </h4>
+                            <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content"
+                                                style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputEmail1"
+                                                                class="form-label">Email</label>
+                                                            <input type="email" class="form-control"
+                                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                            <div id="emailHelp" class="form-text">Nunca compartilharemos
+                                                                seu e-mail
+                                                                com
+                                                                mais ninguém.</div>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <label for="exampleInputPassword1"
+                                                                class="form-label">Senha</label>
+                                                            <input type="password" class="form-control"
+                                                                id="exampleInputPassword1">
+                                                        </div>
+                                                        <div class="mb-3 form-check">
+                                                            <input type="checkbox" class="form-check-input"
+                                                                id="exampleCheck1">
+                                                            <label class="form-check-label" for="exampleCheck1">Lembrar
+                                                                me</label>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Entrar</button>
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-primary"
+                                                        data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Não
+                                                        possui conta?</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content"
+                                                style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Criar Conta
+                                                    </h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form class="row g-3">
+                                                        <div class="col-md-6">
+                                                            <label for="inputEmail4" class="form-label">Email</label>
+                                                            <input type="email" class="form-control" id="inputEmail4">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="inputPassword4" class="form-label">Senha</label>
+                                                            <input type="password" class="form-control"
+                                                                id="inputPassword4">
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <label for="inputAddress"
+                                                                class="form-label">Endereço</label>
+                                                            <input type="text" class="form-control" id="inputAddress"
+                                                                placeholder="Rua Lorem Ipsum Dolor, 123">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="inputCity" class="form-label">Cidade</label>
+                                                            <input type="text" class="form-control" id="inputCity">
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <label for="inputState" class="form-label">Estado</label>
+                                                            <select id="inputState" class="form-select">
+                                                                <option selected>Choose...</option>
+                                                                <option>São Paulo</option>
+                                                                <option>Rio de Janeiro</option>
+                                                                <option>Minas Gerais</option>
+                                                                <option>Santa Catarina</option>
+                                                                <option>Paraná</option>
+                                                                <option>Bahia</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <label class="form-check-label" for="gridCheck">
+                                                                    Lembrar me
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit" class="btn btn-primary">Criar
+                                                                Conta</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                                        data-bs-toggle="modal">Voltar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle"
+                                        role="button" style="font-size: 16px; padding: 16px; margin-top: 10px;">Já é membro Prime? Faça login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-remote-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 left-sidebar">
+                        <div class="content">
+                            <h1>Amigável para a família</h1>
+                            <h4>Com facil controle para os pais e uma página dedicada para crianças, desfrute de
+                                entretenimento infantil seguro e sem anúncios. As crianças podem desfrutar de programas
+                                de TV populares como Peppa Pig, Powerpuff Girls e Chhota Bheem.</h4>
+                                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content"
+                                        style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputEmail1"
+                                                        class="form-label">Email</label>
+                                                    <input type="email" class="form-control"
+                                                        id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                    <div id="emailHelp" class="form-text">Nunca compartilharemos
+                                                        seu e-mail
+                                                        com
+                                                        mais ninguém.</div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label">Senha</label>
+                                                    <input type="password" class="form-control"
+                                                        id="exampleInputPassword1">
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input"
+                                                        id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Lembrar
+                                                        me</label>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Entrar</button>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary"
+                                                data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Não
+                                                possui conta?</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content"
+                                        style="background-color: rgb(35, 47, 62); color: white; border-color: white;">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel2">Criar Conta
+                                            </h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form class="row g-3">
+                                                <div class="col-md-6">
+                                                    <label for="inputEmail4" class="form-label">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputPassword4" class="form-label">Senha</label>
+                                                    <input type="password" class="form-control"
+                                                        id="inputPassword4">
+                                                </div>
+                                                <div class="col-12">
+                                                    <label for="inputAddress"
+                                                        class="form-label">Endereço</label>
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="Rua Lorem Ipsum Dolor, 123">
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="inputCity" class="form-label">Cidade</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="inputState" class="form-label">Estado</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+                                                        <option>São Paulo</option>
+                                                        <option>Rio de Janeiro</option>
+                                                        <option>Minas Gerais</option>
+                                                        <option>Santa Catarina</option>
+                                                        <option>Paraná</option>
+                                                        <option>Bahia</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="gridCheck">
+                                                        <label class="form-check-label" for="gridCheck">
+                                                            Lembrar me
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Criar
+                                                        Conta</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                                data-bs-toggle="modal">Voltar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle"
+                                role="button" style="font-size: 16px; padding: 16px; margin-top: 10px;">Já é membro Prime? Faça login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--BANNER-REMOTE ENDS HERE-->
+        <div class="wrapper">
+            <div class="container">
+                <div class="text-center banner-middle">
+                    <div class="col-sm-4">
+                        <img src="home/img/PV_Benefits_Devices_UPDATED.png" alt="image" class="img-responsive">
+                        <h1>Assista onde quiser</h1>
+                        <p>
+                            Desfrute da web ou com o aplicativo Prime Video em seu telefone, tablet ou Smart TVs
+                            selecionadas - em até 3 dispositivos ao mesmo tempo.
+                        </p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <img src="home/img/PV_Benefits_Download_UPDATED.png" alt="image" class="img-responsive">
+                        <h1>Baixe para assistir quando e onde quiser</h1>
+                        <p>
+                            Assista offline no app Prime Video ao baixar títulos em seu iPhone, iPad, tablet ou
+                            dispositivo Android.
+                        </p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="home/img/PV_Benefits_DataSaver_UPDATED.png" alt="image" class="img-responsive">
+                        <h1>Economia de dados</h1>
+                        <p>
+                            Controle o uso de dados enquanto baixa e assiste a vídeos em telefones ou tablets
+                            selecionados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BANNER REMOTE START HERE-->
+
+        <!-- BANNER REMOTE ENDS HERE-->
+    </main>
+    <footer class="footer">
+        <div class="logo">
+            <a href="https://www.primevideo.com/"><img src="Home/img/logo.png" alt="Prime"></a>
+        </div>
+        <a href="#">Termos e aviso de privacidade</a>
+        <a href="#">Enviar feedback</a>
+        <a href="#">Ajuda</a>
+        <p>© 1996-2021, Amazon.com, Inc. ou suas afiliadas</p>
+    </footer>
+    <script src="Home/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
