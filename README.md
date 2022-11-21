@@ -1,3 +1,3 @@
 # Site-prime
-site prime video
+Clone da plataforma Prime Video
 https://rafael-alves-nascimento.github.io/Site-prime/
